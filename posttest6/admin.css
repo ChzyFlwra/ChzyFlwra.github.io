@@ -1,0 +1,333 @@
+:root {
+    --background-color: #333;
+    --navbar-background: rgb(89, 3, 170);
+    --text-color: white;
+    --link-hover-background: white;
+    --link-hover-color: black;
+    --login-bg: rgba(255, 255, 255, 0.1);
+    --login-input-bg: rgba(255, 255, 255, 0.1);
+    --login-button-bg: #3498db;
+    --login-button-hover-bg: #2980b9;
+    --hero-text-color: rgb(30, 6, 138);
+    --news-color: white;
+    --copyright-bg: black;
+    --box-color: rgb(0,0,0);
+    --box-text: white;
+    --produk-text: aliceblue;
+    --h1-produk-text : aliceblue;
+    --news-text : aliceblue;
+}
+
+body.light-mode {
+    --background-color: #fff;
+    --navbar-background: rgba(89, 3, 170, 0.438);
+    --text-color: #333;
+    --link-hover-background: #333;
+    --link-hover-color: #fff;
+    --login-bg: #42006e;
+    --login-input-bg: rgba(0, 0, 0, 0.1);
+    --login-button-bg: #3498db;
+    --login-button-hover-bg: #2980b9;
+    --hero-text-color: rgb(30, 6, 138);
+    --news-color: #333;
+    --copyright-bg: #fff;
+    --box-color: rgb(255,255,255);
+    --box-text: black;
+    --produk-text: rgb(0, 0, 0);
+    --h1-produk-text : black;
+    --news-text : rgb(9, 11, 12);
+    
+}
+
+/* Additional CSS for light mode, if needed */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+
+    margin: 0;
+    padding: 0;
+    
+    height: 100vh;
+}
+
+.navbar{
+    background-color: var(--navbar-background);
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 60px;
+}
+
+.chezy img{
+    width: 70px;
+}
+
+.nav-menu{
+    gap: 60px;
+    display: flex;
+    list-style: none;
+    align-items: center;
+    cursor: pointer;
+}
+
+.nav-menu button {
+    padding: 8px;
+    width: 90px;
+    cursor: pointer;
+    border: none;
+    border-radius: 15px;
+    background-color: rgb(26, 116, 177);
+}
+
+.nav-menu button:hover {
+    transform: scale(1.1);
+}
+
+.nav-menu li a{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.nav-menu li a:hover{
+    color: black;
+}
+
+#logo li{
+    list-style: none;
+}
+
+#logo img{
+    width: 50px;
+    cursor: pointer;
+}
+
+.dashboard {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    position: relative;
+}
+
+.dash-side-bar {
+    width: 15%;
+    height: auto;
+    background-color: #EFCD00;
+    display: flex;
+    flex-direction: column;
+}
+
+.dash-side-bar img {
+    width: 96px;
+}
+
+.dash-side-bar ul li {
+    list-style: none;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.dash-container {
+    width: 100%;
+    height: auto;
+    background-color: #ffff;
+    overflow: hidden;
+    align-items: center;
+}
+
+.dash-nav-bar {
+    width: auto;
+    padding: 16px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.dash-nav-icon {
+    display: inline;
+}
+
+.dash-account {
+    display: inline-flex;
+    gap: 8px;
+}
+
+.dash-main {
+    margin-top: 100px;
+    width: auto;
+    padding: 32px;
+    border-radius: 16px;
+    background-color: white;
+}
+
+.leading-btn {
+    text-align: end;
+    color: #22BB33;
+}
+
+.dash-main table {
+    width: 100%;
+    border: 2px solid #ABABAB;
+    border-collapse: collapse;
+}
+
+.dash-main table thead {
+    background-color: #EFEFEF;
+}
+
+.dash-main table th, td {
+    padding: 8px;
+    border: 1px solid #ABABAB;
+}
+
+.action {
+    text-align: center;
+}
+
+.add-btn {
+    background-color: #333;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    font-weight: 500;
+    color: white;
+}
+
+.edit-btn {
+    background-color: rgb(45, 152, 240);
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+}
+
+.delete-btn {
+    background-color: #ff0004;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+}
+.history-btn {
+    background-color: #5BC0DE;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    font-weight: 500;
+    color: white;
+}
+
+.add-btn:hover {
+    filter: brightness(90%);
+}
+
+.edit-btn:hover {
+    filter: brightness(90%);
+}
+
+.delete-btn:hover {
+    filter: brightness(90%);
+}
+
+.history-btn:hover {
+    filter: brightness(90%);
+}
+
+
+.add-data {
+    height: 100vh;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.add-form-container {
+    background-color: white;
+    padding: 64px;
+    border-radius: 32px;
+}
+
+.add-form-container h1 {
+    text-align: center;
+}
+
+.add-form-container hr {
+    border: 2px solid #4b472d;
+    margin-bottom: 24px;
+}
+
+.add-form-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+
+@media (max-width: 640px) {
+    nav {
+        padding:  16px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .top-nav {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .logo img {
+        height: 50px;
+    }
+
+    .nav-items {
+        display: none
+    }
+
+    .portal-btn {
+        display: none;
+    }
+
+
+
+    #burgerbar {
+        display: block;
+        width: 36px;
+        background-color: white;
+        border: none;
+        cursor: pointer;
+    }
+
+    #show {
+        display: block;
+    }
+
+    #close {
+        display: none;
+    }
+
+    #nav-items {
+        display: none;
+        flex-direction: column;
+    }
+
+    #nav-items a{
+        text-align: center;
+    }
+
+    #portal-btn{
+        display: none;
+        width: 100%;
+    }
+
+    #portal-btn button{
+        width: 100%;
+    }
+
+    #portal-btn button:hover{
+        scale: 100%;
+    }
+
+}
